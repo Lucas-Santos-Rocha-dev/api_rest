@@ -29,12 +29,6 @@ class Estudante(Resource):
         self.argumentos.add_argument("nome")
         self.argumentos.add_argument("idade")
 
-    def find_estudante(self, estudante_id):
-        for estudante in estudantes:
-            if estudante['estudante_id'] == estudante_id:
-                return estudante
-        return None
-
     def get(self, estudante_id):
         estudante = self.find_estudante(estudante_id)
 
@@ -48,11 +42,10 @@ class Estudante(Resource):
         dados = self.argumentos.parse_args()
 
         # descompactando dicionario utilizando **kwargs
-        estudante_objeto = EstudanteModel(estudante_id, **dados)
-        novo_estudante = estudante_objeto.json()
-
-        estudantes.append(novo_estudante)
-        return novo_estudante, 200 # success
+        estudante = EstudanteModel(**dados)
+        estudante.save_estudante()
+        return estudante.json()
+        
 
     def put(self, estudante_id):
         # dicionario de todos os argumentos passados
