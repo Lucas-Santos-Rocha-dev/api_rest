@@ -15,6 +15,7 @@ def cria_banco():
 api.add_resource(Estudantes, '/estudantes')
 api.add_resource(Estudante, '/estudantes/<int:estudante_id>')
 
+
 if __name__ == "__main__":
     from sql_alchemy import banco
     banco.init_app(app)
