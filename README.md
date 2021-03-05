@@ -20,7 +20,7 @@ Antes de começar, é necessário ter instalado as seguintes ferramentas:
 Para instalar as dependências basta ir até a raiz do projeto, abrir o terminal e digitar o seguinte comando:
 > pip3 install -r requirements.txt
 
-** Caso ocorra algum erro com o comando acima, tente instalar as dependências, separadamente: **
+**Caso ocorra algum erro com o comando acima, tente instalar as dependências, separadamente:**
 * pip3 install Flask
 * pip3 install Flask-RESTful
 * pip3 install Flask-SQLAlchemy
@@ -33,6 +33,25 @@ Após instalação das dependências, vá para a raiz do projeto, abra o termina
 
 #### Windows
 > py app.py
+
+### Como utilizar a API
+
+##### POST
+
+* Faça uma requisição do tipo POST para "http://127.0.0.1:5000/estudantes/{id_estudante}"
+* O id_estudante deve ser do tipo númerico, e **deve sempre** ser informado, ex:
+> http://127.0.0.1:5000/estudantes/7
+* os dados devem ter a seguinte estrutura:
+´´´
+    {
+        "nome": "Lucas",
+        "idade": 22,
+        "sexo": "Masculino",
+        "ano_letivo": "1 serie"
+    }
+´´´
+
+
 
 ### Tecnologias
 As seguintes ferramentas foram utilizadas na construção do projeto:
