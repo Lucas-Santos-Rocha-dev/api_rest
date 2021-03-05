@@ -59,7 +59,7 @@ O id_estudante deve ser do tipo númerico, e **deve sempre** ser informado, ex:
 Faça uma requisição do tipo PUT para http://127.0.0.1:5000/estudantes/{id_estudante}
 O id_estudante deve ser do tipo númerico, e **deve sempre** ser informado, ex:
 > http://127.0.0.1:5000/estudantes/1
-Os dados devem ter a seguinte estrutura:
+##### Os dados devem ter a seguinte estrutura:
 ``` 
     {
         "nome": "Sabrina",
