@@ -35,7 +35,7 @@ Após instalação das dependências, vá para a raiz do projeto, abra o termina
 
 ### Como utilizar a API
 
-#### PUT
+#### POST
 
 Faça uma requisição do tipo POST para http://127.0.0.1:5000/estudantes/{id_estudante}
 O id_estudante deve ser do tipo númerico, e **deve sempre** ser informado, ex:
