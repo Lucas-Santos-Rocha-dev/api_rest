@@ -38,18 +38,18 @@ Após instalação das dependências, vá para a raiz do projeto, abra o termina
 
 ##### POST
 
-* Faça uma requisição do tipo POST para "http://127.0.0.1:5000/estudantes/{id_estudante}"
+* Faça uma requisição do tipo POST para http://127.0.0.1:5000/estudantes/{id_estudante}
 * O id_estudante deve ser do tipo númerico, e **deve sempre** ser informado, ex:
 > http://127.0.0.1:5000/estudantes/7
 * os dados devem ter a seguinte estrutura:
-´´´
+``` 
     {
         "nome": "Lucas",
         "idade": 22,
         "sexo": "Masculino",
         "ano_letivo": "1 serie"
     }
-´´´
+``` 
 
 
 
