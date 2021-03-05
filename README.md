@@ -41,7 +41,7 @@ Após instalação das dependências, vá para a raiz do projeto, abra o termina
 Faça uma requisição do tipo POST para http://127.0.0.1:5000/estudantes/{id_estudante}
 O id_estudante deve ser do tipo númerico, e **deve sempre** ser informado, ex:
 > http://127.0.0.1:5000/estudantes/1
-Os dados devem ter a seguinte estrutura:
+##### Os dados devem ter a seguinte estrutura:
 ``` 
     {
         "nome": "Lucas",
@@ -80,7 +80,7 @@ O id_estudante deve ser do tipo númerico, e **deve sempre** ser informado, ex:
 > http://127.0.0.1:5000/estudantes/1
 
 ##### Observações
-* Caso o id_estudante informado não seja encontrado, será retornado uma mensagem informando o que o estudante não foi encontrado
+* Caso o id_estudante informado não seja encontrado, será retornado uma mensagem informando que o estudante não foi encontrado
 * Caso o id_estudante informado seja encontrado, esse registro será deletado
 
 #### GET
@@ -88,7 +88,7 @@ O id_estudante deve ser do tipo númerico, e **deve sempre** ser informado, ex:
 * Para retornar um estudante especifico, faça uma requisição para http://127.0.0.1:5000/estudantes/1
 
 ##### Observações
-* Caso o id_estudante informado não seja encontrado, será retornado uma mensagem informando o que o estudante não foi encontrado
+* Caso o id_estudante informado não seja encontrado, será retornado uma mensagem informando que o estudante não foi encontrado
 
 ### Tecnologias
 As seguintes ferramentas foram utilizadas na construção do projeto:
