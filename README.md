@@ -97,7 +97,7 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 * Sqlite
 
 ### Considerações finais
-Optei por desenvolver a API em Flask, pois no dia a dia trabalho bastante com Django, quis demonstrar que apesar de não estar usando no dia a dia, consigo desenvolver em Flask, caso tenha a oportunidade, gostaria de conversar sobre outros projetos em Django e em python que faço parte :)
+Optei por desenvolver a API em Flask, pois no dia a dia, desenvolvo a maior parte do tempo em Django, quis demonstrar que apesar de não estar usando no dia a dia, consigo desenvolver em Flask, caso tenha a oportunidade, gostaria de conversar sobre outros projetos em Django e em python que faço parte :)
 
 
 
