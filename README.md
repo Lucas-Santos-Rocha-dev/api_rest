@@ -38,10 +38,10 @@ Após instalação das dependências, vá para a raiz do projeto, abra o termina
 
 ##### POST
 
-##### Faça uma requisição do tipo POST para http://127.0.0.1:5000/estudantes/{id_estudante}
-##### O id_estudante deve ser do tipo númerico, e **deve sempre** ser informado, ex:
-> http://127.0.0.1:5000/estudantes/7
-##### Os dados devem ter a seguinte estrutura:
+Faça uma requisição do tipo POST para http://127.0.0.1:5000/estudantes/{id_estudante}
+O id_estudante deve ser do tipo númerico, e **deve sempre** ser informado, ex:
+> http://127.0.0.1:5000/estudantes/1
+Os dados devem ter a seguinte estrutura:
 ``` 
     {
         "nome": "Lucas",
@@ -53,11 +53,42 @@ Após instalação das dependências, vá para a raiz do projeto, abra o termina
 ##### Observações
 * Todos os campos são obrigatórios
 * Caso algum campo não seja informado, será retornado uma mensagem de erro, informando qual campo está ausente
+* Caso o id_estudante informado, ja pertença a algum outro estudante cadastrado, será retornado uma mensagem de erro, informando que não será possível realizar o cadastro
 
 #### PUT
+Faça uma requisição do tipo PUT para http://127.0.0.1:5000/estudantes/{id_estudante}
+O id_estudante deve ser do tipo númerico, e **deve sempre** ser informado, ex:
+> http://127.0.0.1:5000/estudantes/1
+Os dados devem ter a seguinte estrutura:
+``` 
+    {
+        "nome": "Sabrina",
+        "idade": 20,
+        "sexo": "Feminino",
+        "ano_letivo": "4 serie"
+    }
+```
+##### Observações
+* Todos os campos são obrigatórios
+* Caso algum campo não seja informado, será retornado uma mensagem de erro, informando qual campo está ausente
+* Caso o id_estudante informado não seja encontrado, esse registro será adicionado no banco
+* Caso o id_estudante informado seja encontrado, esse registro será atualizado
 
+#### DELETE
+Faça uma requisição do tipo DELETE para http://127.0.0.1:5000/estudantes/{id_estudante}
+O id_estudante deve ser do tipo númerico, e **deve sempre** ser informado, ex:
+> http://127.0.0.1:5000/estudantes/1
 
+##### Observações
+* Caso o id_estudante informado não seja encontrado, será retornado uma mensagem informando o que o estudante não foi encontrado
+* Caso o id_estudante informado seja encontrado, esse registro será deletado
 
+#### GET
+* Para retornar todos os estudantes cadastrados, faça uma requisição para http://127.0.0.1:5000/estudantes
+* Para retornar um estudante especifico, faça uma requisição para http://127.0.0.1:5000/estudantes/1
+
+##### Observações
+* Caso o id_estudante informado não seja encontrado, será retornado uma mensagem informando o que o estudante não foi encontrado
 
 ### Tecnologias
 As seguintes ferramentas foram utilizadas na construção do projeto:
