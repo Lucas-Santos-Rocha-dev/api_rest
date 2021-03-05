@@ -83,8 +83,8 @@ O id_estudante deve ser do tipo númerico, e **deve sempre** ser informado, ex:
 * Caso o id_estudante informado seja encontrado, esse registro será deletado
 
 #### GET
-* Para retornar todos os estudantes cadastrados, faça uma requisição para http://127.0.0.1:5000/estudantes
-* Para retornar um estudante especifico, faça uma requisição para http://127.0.0.1:5000/estudantes/1
+* Para retornar todos os estudantes cadastrados, faça uma requisição do tipo GET para http://127.0.0.1:5000/estudantes
+* Para retornar um estudante especifico, faça uma requisição do tipo GET para http://127.0.0.1:5000/estudantes/1
 
 ##### Observações
 * Caso o id_estudante informado não seja encontrado, será retornado uma mensagem informando que o estudante não foi encontrado
