@@ -1,7 +1,6 @@
 # Sobre o projeto
 
-Projeto para demonstrar o funcionamento básico de uma API REST, todas as requisições implementadas na API
-foram testadas através da ferramenta [postman](https://www.postman.com/)
+Projeto para demonstrar o funcionamento básico de uma API REST desenvolvida em Flask, todas as requisições implementadas na API, foram testadas através da ferramenta [postman](https://www.postman.com/)
 
 # Como executar o projeto
 
@@ -36,7 +35,7 @@ Após instalação das dependências, vá para a raiz do projeto, abra o termina
 
 ### Como utilizar a API
 
-##### POST
+#### PUT
 
 Faça uma requisição do tipo POST para http://127.0.0.1:5000/estudantes/{id_estudante}
 O id_estudante deve ser do tipo númerico, e **deve sempre** ser informado, ex:
@@ -96,6 +95,9 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 * Flask
 * SQLAlchemy
 * Sqlite
+
+### Considerações finais
+Optei por desenvolver a API em Flask, pois no dia a dia trabalho bastante com Django, quis demonstrar que apesar de não estar usando no dia a dia, consigo desenvolver em Flask, caso tenha a oportunidade, gostaria de conversar sobre outros projetos em Django e em python que faço parte :)
 
 
 

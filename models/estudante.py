@@ -35,17 +35,20 @@ class EstudanteModel(banco.Model):
         return None
 
     def save_estudante(self):
+        # insert into estudantes (colunas) values (campos)
         # adiciona o proprio objeto
         banco.session.add(self)
         banco.session.commit()
 
     def update_estudante(self, nome, idade, sexo, ano_letivo):
+        # update estudantes set campo = campo where id_estudante = id_estudante
         self.nome = nome
         self.idade = idade
         self.sexo = sexo
         self.ano_letivo = ano_letivo
 
     def delete_hotel(self):
+        # delete from estudante where id_estudante = id_estudante
         # deletando o proprio objeto
         banco.session.delete(self)
         banco.session.commit()
